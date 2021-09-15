@@ -15,8 +15,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden;/*permet de bloquer la fenêtre, aucun scroll possible même si ça dépasse*/
 }
 .container {
-    background: lightgrey;
+    background: lightgrey; /**/
+    width :90vw;
+    display: flex;
+}
+
+h3 {
+    border: 1px solid magenta;
 }
