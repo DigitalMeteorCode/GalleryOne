@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+* {
+    box-sizing: border-box; /*supprime toutes les marges par défaut et règle les boîtes par raport à leurs bordures et non aux contenus*/
+}
+
 body {
-    background-color: bisque;
+    background-color: #000;
+    user-select: none; /*permet de ne pas autoriser la sélection de texte (genre pour un copier/coller). c'est  ici plus esthétique*/
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.container {
+    background: lightgrey;
 }
