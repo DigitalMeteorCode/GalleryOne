@@ -5,7 +5,7 @@
 }
 body {
     background-color: #000;
-    user-select: none; /*permet de ne pas autoriser la sélection de texte (genre pour un copier/coller). c'est  ici plus esthétique*/
+    user-select: none; /*permet de ne pas autoriser la sélection de texte (genre pour un copier/coller). ici c'est esthétique*/
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
     display: flex;
@@ -16,12 +16,10 @@ body {
     overflow: hidden;/*permet de bloquer la fenêtre, aucun scroll possible même si ça dépasse*/
 }
 .container {
-    /*background: lightgrey; */
     width :90vw;
     display: flex;
 }
 .panel {
-    /*background: url(./img/normandy.png);*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,7 +32,6 @@ body {
     position: relative;/*permet que la position absolute des h3 (enfants directs) soient prises en compte dans leurs parents respectifs, chacun sa panel*/
 }
 .panel h3 {
-    /*border: 1px solid magenta;*/
     position: absolute;
     font-size: 3rem;
     margin: 0px;
@@ -43,7 +40,7 @@ body {
     opacity: 0;
 }
 .panel.active {
-    flex: 5;
+    flex: 10;
 }
 .panel.active h3 {
     opacity: 0.8;
