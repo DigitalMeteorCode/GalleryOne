@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box; /*supprime toutes les marges par défaut et règle les boîtes par raport à leurs bordures et non aux contenus*/
 }
-
 body {
     background-color: #000;
     user-select: none; /*permet de ne pas autoriser la sélection de texte (genre pour un copier/coller). c'est  ici plus esthétique*/
@@ -22,11 +21,11 @@ body {
     display: flex;
 }
 .panel {
-    background: url(./img/normandy.png);
+    /*background: url(./img/normandy.png);*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
     flex: 1;
     margin: 10px;
     border-radius: 50px;
@@ -34,7 +33,6 @@ body {
     transition: flex 700ms ease-in-out;
     position: relative;/*permet que la position absolute des h3 (enfants directs) soient prises en compte dans leurs parents respectifs, chacun sa panel*/
 }
-
 .panel h3 {
     /*border: 1px solid magenta;*/
     position: absolute;
@@ -44,11 +42,20 @@ body {
     left: 20px;
     opacity: 0;
 }
-
 .panel.active {
     flex: 5;
 }
 .panel.active h3 {
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out 0.4s;
+}
+
+/*Responsivity*/
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4), .panel:nth-of-type(5) {
+        display: none;
+    }
 }
